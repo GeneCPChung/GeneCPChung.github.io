@@ -3,18 +3,44 @@ a {
 	text-decoration: none;
 }
 
-a:visited #blog-link {
+a:link {
+	color: #54D8D6;
+}
+
+a:visited {
+	color: white;
+}
+
+a:hover {
 	color: #3A506B;
 }
 
+body {
+/*	background-color: #CDF9F8;*/	
+background-color: green;
+}
+
+header {
+	color: white;
+}
+
 h1 {
-	background-color: #55D6BE;
+	background-color:;
+	color: white;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 150%;
+	text-shadow: 2px 2px #34D0CE;
 }
 
 li a {
 	background-color: #54D8D6;
-	box-shadow: 2px 2px 1px #888888;
+	box-shadow: 2px 2px 1px #239C9A;
 	color: #FFFFFF;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
+
+@media(min-width: 768px){
+	body {
+		background-color: #CDF9F8;
+	}
+
