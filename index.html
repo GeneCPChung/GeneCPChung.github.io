@@ -9,39 +9,44 @@
 </head>
 <body>
 	<div class="container">
-			<header>
-				<h1>
-					<section>Gene CP Chung
-						<p>Jr Web Developer</p>
-					</section>
-				</h1>
-				<nav>
-					<a href="#">About Me</a> 
-					<a href="#">Blog</a>
-					<a href="#">Portfolio</a>
-					<a href="#">Contact Me</a>
-				</nav>
-			</header>
+		<header class="grid-item-1">
+			<h1>
+				Gene CP Chung
+			</h1>
+			<nav>
+				<ul>
+					<li><a href="#about">About Me</a></li>
+					<li><a href="#blog">Blog</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#contact">Contact Me</a></li>
+				</ul>
+			</nav>
+		</header>
+		
 		<section class="grid-item-2">
-			<h1>ABOUT ME</h1>
+			<h1 id="about">ABOUT ME</h1>
 			<p>I am currently a full-stack junior developer at We Can Code IT. I previously worked in Third Party Logistics for 15 years where I took part in start-ups doing UA testing, metrics as well as process development and fullfilment.<br></br> I want to be leading a team in the metrics or database management field within the next 2-3 years and eventualy break out into my own company.</p>
-			<h1 >BLOG</h1>
-			<p>To help keep me motivated, I've started a blog to track my coding journey.You can visit the blog <a href="http://blog.genechung.com/">Here</a>.</p>
 		</section>
 		<section class="grid-item-3">
-			<h1>PROJECTS</h1>
-			<p>Below are some of my projects that I have completed or have taken part in.</p>
-			<section>
-			<ul>
-				<a href="http://genechung.com/tributepage/" target="_blank"><img src="http://genechung.com/images/thumbnail1.JPG"></a>
-				<a href="https://github.com/GeneCPChung" target="_blank"><img src="github-logo.jpg"></a>
-				<img src=http://genechung.com/images/comingsoon.jpg>
-				<img src="http://genechung.com/images/comingsoon.jpg">
-			</ul>
-			</section>
+			<h1 id="blog">BLOG</h1>
+			<p>To help keep me motivated, I've started a blog to track my coding journey.You can visit the blog <a id="blog-link" href="http://blog.genechung.com/">Here</a>.</p>
 		</section>
-		<section class="grid-item grid-item-4">
-			<h1>CONTACT ME</h1>
+
+		<section class="grid-item-4">
+			<h1 id="projects">PROJECTS</h1>
+			<p>Below are some of my projects that I have completed or have taken part in.</p>
+			<article>
+				<ul>
+					<a href="http://genechung.com/tributepage/" target="_blank"><img src="./images/tributepage.jpg"></a>
+					<a href="https://github.com/GeneCPChung" target="_blank"><img src="./images/github-logo.jpg"></a>
+					<img src=http://genechung.com/images/comingsoon.jpg>
+					<img src="http://genechung.com/images/comingsoon.jpg">
+				</ul>
+				
+			</article>
+		</section>
+		<section class="grid-item grid-item-5">
+			<h1 id="contact">CONTACT ME</h1>
 			<p>You can reach me at the below social media links</p>
 			
 			<ul>
@@ -50,9 +55,11 @@
 				<a href="https://www.facebook.com/GenecpChung" target="_blank" class="fa fa-facebook"></a>
 				<a href="https://twitter.com/genecpchung" target="_blank" class="fa fa-twitter"></a>
 			</ul>
+			
 		</section>
-		<section class="grid-item grid-item-5"></section>
-		<section class="grid-item grid-item-6"></section>
+
+		
+
 	</div>
 
 </body>

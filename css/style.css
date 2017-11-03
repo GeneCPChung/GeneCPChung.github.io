@@ -1,8 +1,20 @@
-* {
-	box-sizing: border-box;
-	border: 1px dotted #000;
-	margin: 0;
-	padding: 0;
-	border
+
+a {
+	text-decoration: none;
 }
 
+a:visited #blog-link {
+	color: #3A506B;
+}
+
+h1 {
+	background-color: #55D6BE;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+li a {
+	background-color: #54D8D6;
+	box-shadow: 2px 2px 1px #888888;
+	color: #FFFFFF;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
