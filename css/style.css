@@ -1,22 +1,6 @@
-
-a {
-	text-decoration: none;
-}
-
-a:link {
-	color: white;
-}
-
-a:visited {
-	color: white;
-}
-
-a:hover {
-	color: #3A506B;
-}
-
 body {
 	background-color: #CDF9F8;	
+	background-color: green;	
 
 }
 
@@ -37,6 +21,22 @@ li a {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
+a {
+	text-decoration: none;
+}
+
+a:link {
+	color: #3A506B;
+}
+
+a:visited {
+	color: #3A506B;
+}
+
+a:hover {
+	color: white;
+}
+
 nav {
 	background-color: #54D8D6;
 }
@@ -48,8 +48,11 @@ nav {
 	padding: 1%;
 }
 
+#project-adj {
+	
+}
+
 @media(min-width: 700px){
 	body {
 		background-color: #CDF9F8;
 	}
-

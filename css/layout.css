@@ -7,7 +7,9 @@
 a {
 }
 
-body { padding-top: 2em; }
+body { 
+	padding-top: 2.5rem; 
+}
 
 footer,
 header {
@@ -26,14 +28,13 @@ img {
 	max-width: 100%;
 }
 
-
 ol, 
 ul {
 
 	align-items: center;
 	display: flex;
 	justify-content: space-around;
-list-style-type: none;
+	list-style-type: none;
 }
 
 li a{
@@ -43,8 +44,8 @@ li a{
 nav {
 
 	position: fixed;
-top: 0;
-width: 100%;
+	top: 0;
+	width: 100%;
 }
 
 p {
@@ -59,7 +60,12 @@ p {
 }
 
 .grid-item-1 {
-
+	align-items: center;
+	display: flex;
+	display: grid;
+	grid-column: 1 / -1;
+	justify-content: center;
+	padding: 1em;
 }
 
 .grid-item-2 {
@@ -72,12 +78,10 @@ p {
 }
 
 .grid-item-3 {
-	align-items: center;
 	display: flex;
 	display: grid;
 	grid-column: 1 / -1;
 	justify-content: center;
-	padding: 1em;
 }
 
 .grid-item-4 {
@@ -86,30 +90,32 @@ p {
 	display: grid;
 	grid-column: 1 / -1;
 	justify-content: center;
-	padding: 1em;
 }
 
-.grid-item-5 {
+.header-flex {
 	align-items: center;
 	display: flex;
-	display: grid;
-	grid-column: 1 / -1;
-	justify-content: center;
-	padding: 1em;
-
+	flex-direction: column;
+	
 }
 
-.h1-spacing {
-
+.header-img {
+border-radius: 50%;
+max-height: 8rem;
+max-width: 6rem;
+padding-top: .25em;
 }
 
 .project-item-1 {
 	align-items: center;
 	display: flex;
-display: grid;
-grid-gap: .5em;
-grid-template-columns: 1fr 1fr;
-justify-content: center;
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: 1fr 1fr;
+	justify-content: center;
+	margin: 3%;
+	max-width: 1000px;
+	
 }
 
 .social-media {
@@ -119,14 +125,12 @@ justify-content: center;
 }
 
 #nav-height {
-	padding: 1%;
+	padding: .75%;
 }
 
+@media(min-width: 768px){
 
 
-@media(min-width: 700px){
-
-	
 	header {
 
 	}
@@ -138,14 +142,14 @@ justify-content: center;
 	ol,
 	ul {
 		align-items: center;
-	display: flex;
-justify-content: space-around;
-list-style-type: none;
-text-align: center;
-margin: 0%;
+		display: flex;
+		justify-content: space-around;
+		list-style-type: none;
+		text-align: center;
+		margin: 0%;
 	}
 
 	#nav-height {
-	padding: 0;
-}
+		padding: .5%;
+	}
 }
