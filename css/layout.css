@@ -29,6 +29,7 @@ img {
 
 ol, 
 ul {
+
 	align-items: center;
 	display: flex;
 	justify-content: space-around;
@@ -40,6 +41,7 @@ li a{
 }
 
 nav {
+
 	position: fixed;
 top: 0;
 width: 100%;
@@ -116,12 +118,15 @@ justify-content: center;
 	justify-content: space-around;
 }
 
-
+#nav-height {
+	padding: 1%;
+}
 
 
 
 @media(min-width: 700px){
 
+	
 	header {
 
 	}
@@ -139,4 +144,8 @@ list-style-type: none;
 text-align: center;
 margin: 0%;
 	}
+
+	#nav-height {
+	padding: 0;
+}
 }
