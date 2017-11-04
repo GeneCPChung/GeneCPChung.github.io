@@ -1,6 +1,6 @@
 body {
 	background-color: #CDF9F8;	
-	background-color: green;	
+		
 
 }
 
@@ -41,6 +41,10 @@ nav {
 	background-color: #54D8D6;
 }
 
+#facebook + a:hover {
+	color: #008bcf;
+}	
+
 #social-media {
 	display: flex;
 	background-color: #54D8D6;
@@ -48,11 +52,5 @@ nav {
 	padding: 1%;
 }
 
-#project-adj {
-	
-}
-
 @media(min-width: 700px){
-	body {
-		background-color: #CDF9F8;
-	}
+

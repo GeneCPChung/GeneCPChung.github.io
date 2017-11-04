@@ -103,7 +103,7 @@ p {
 border-radius: 50%;
 max-height: 8rem;
 max-width: 6rem;
-padding-top: .25em;
+padding-top: .5rem;
 }
 
 .project-item-1 {
@@ -114,7 +114,7 @@ padding-top: .25em;
 	grid-template-columns: 1fr 1fr;
 	justify-content: center;
 	margin: 3%;
-	max-width: 1000px;
+	max-width: 800px;
 	
 }
 
@@ -122,10 +122,12 @@ padding-top: .25em;
 	margin-top: 3%;
 	display: flex;
 	justify-content: space-around;
+	margin-bottom: 1.5rem;
 }
 
 #nav-height {
-	padding: .75%;
+	padding-top: 2%;
+	padding-bottom: 2%;
 }
 
 @media(min-width: 768px){
