@@ -4,7 +4,7 @@ a {
 }
 
 a:link {
-	color: #54D8D6;
+	color: white;
 }
 
 a:visited {
@@ -16,7 +16,7 @@ a:hover {
 }
 
 body {
-/*	background-color: #CDF9F8;*/	
+/*	background-color: #CDF9F8;	*/
 background-color: green;
 }
 
@@ -33,13 +33,22 @@ h1 {
 }
 
 li a {
-	background-color: #54D8D6;
-	box-shadow: 2px 2px 1px #239C9A;
 	color: #FFFFFF;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
-@media(min-width: 768px){
+nav {
+	background-color: #54D8D6;
+}
+
+#social-media {
+	display: flex;
+	background-color: #54D8D6;
+	justify-content: space-around;
+	padding: 1%;
+}
+
+@media(min-width: 700px){
 	body {
 		background-color: #CDF9F8;
 	}
