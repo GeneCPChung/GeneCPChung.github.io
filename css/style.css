@@ -9,16 +9,36 @@ header {
 }
 
 h1 {
-	background-color:;
-	color: white;
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	font-size: 150%;
-	text-shadow: 2px 2px #34D0CE;
+	color: #00A0B6;
+	font-family: "Arial Black";
+
+/*	font-weight: 900;*/
+	/*text-shadow: 2px 2px #34D0CE;*/
+}
+
+h2 {
+	color: #00A0B6;
+	font-family: "Arial Black";
+	font-size: 85%;
+/*	text-shadow: 2px 2px #34D0CE;*/
+}
+
+h3	{
+	color: #002F2F;
 }
 
 li a {
-	color: #FFFFFF;
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: #00A0B6;
+	font-family: "Arial Black";
+}
+
+ol,
+ul {
+	list-style-type: none;
+}
+
+p {
+	color: #007A7A;
 }
 
 a {
@@ -26,24 +46,27 @@ a {
 }
 
 a:link {
-	color: #3A506B;
+	color: #00A0B6;
 }
 
 a:visited {
-	color: #3A506B;
+	color: #00A0B6;
 }
 
 a:hover {
-	color: white;
+	
+	color: #00FFFF;
+
 }
 
 nav {
 	background-color: #54D8D6;
 }
 
-#facebook + a:hover {
-	color: #008bcf;
-}	
+ul li p {
+		background-color: #54D8D6;
+		display: block;
+	}
 
 #social-media {
 	display: flex;
@@ -52,5 +75,6 @@ nav {
 	padding: 1%;
 }
 
-@media(min-width: 700px){
+
+@media(min-width: 768px){
 
