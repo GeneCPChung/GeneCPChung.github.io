@@ -42,7 +42,7 @@ img {
 }
 
 nav {
-	height: 8%;
+	height: 4%;
 	display: grid;
 	position: fixed;
 	top: 0;
@@ -149,15 +149,15 @@ padding-top: .5rem;
 
 
 	header {
-
+		padding-top: 0;
 	}
 
 	nav {
-		
+		height: 4%;
 	}
 
 	nav ul li a {
-		font-size: 135%;
+		font-size: 115%;
 	}
 
 	ol,
