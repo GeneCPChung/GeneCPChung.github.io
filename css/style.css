@@ -1,7 +1,5 @@
 body {
 	background-color: #CDF9F8;	
-		
-
 }
 
 header {
@@ -11,16 +9,12 @@ header {
 h1 {
 	color: #00A0B6;
 	font-family: "Arial Black";
-
-/*	font-weight: 900;*/
-	/*text-shadow: 2px 2px #34D0CE;*/
 }
 
 h2 {
 	color: #00A0B6;
 	font-family: "Arial Black";
 	font-size: 85%;
-/*	text-shadow: 2px 2px #34D0CE;*/
 }
 
 h3	{
@@ -64,17 +58,13 @@ nav {
 }
 
 ul li p {
-		background-color: #54D8D6;
-		display: block;
-	}
+	background-color: #54D8D6;
+	display: block;
+}
 
-#social-media {
+#social-media-flex {
 	display: flex;
 	background-color: #54D8D6;
 	justify-content: space-around;
 	padding: 1%;
 }
-
-
-@media(min-width: 768px){
-
