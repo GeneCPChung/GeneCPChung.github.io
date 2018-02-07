@@ -142,3 +142,15 @@ img {
   background-color: #00a69c;
   transition-duration: 0.2s;
 }
+
+.hero h2 {
+  padding-top: calc(50vh - 2rem);
+  line-height: 2rem;
+  font-size: 2rem;
+  font-family: 'AvenirNextMedium';
+  width: 60vw;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
