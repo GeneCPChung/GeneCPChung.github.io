@@ -1,4 +1,4 @@
-
+/*
 
 body:before {
   content: "";
@@ -32,7 +32,7 @@ img {
   width: 270px;
   height: 150px;
 }
-
+*/
 @font-face {
     font-family: 'KGSecondChancesSolid';
     src: url('../fonts/KGSecondChancesSolid.ttf');
@@ -51,9 +51,9 @@ img {
 .header{
     color: #91c73e;
     font-family: 'AvenirNextBold';
-    
-}
 
+}
+/*
 #slider {
     width: 270px;
     height: 150px;
@@ -117,6 +117,28 @@ img {
   -ms-transform: translate(-50%, -50%)
 }
 
+} */
+
+.hero {
+  background: url("../images/dcdl-orange.jpg") no-repeat center center;
+  height: 100vh;
 }
 
+.navbar {
 
+  padding-right: 2vh;
+  font-size: 1.45rem;
+  font-family: 'AvenirNextMedium';
+  background-color: rgba(0,0,0,.5);
+}
+
+.navbar a {
+  color: white;
+  padding-top: 2vh;
+  transition-duration: 0.2s;
+}
+
+.navbar a:hover {
+  background-color: #00a69c;
+  transition-duration: 0.2s;
+}

@@ -49,16 +49,15 @@ header a img {
 
 .navbar a {
     display: block;
-    color: #008C99;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
-
+/* 
 .navbar a:hover {
     background: #ddd;
     color: black;
-}
+} */
 
 /*.overlay {
   position: absolute;
@@ -78,7 +77,7 @@ header a img {
 	.header {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-around;	
+		justify-content: space-around;
 		margin: 1rem auto;
 }
 	.header img {
