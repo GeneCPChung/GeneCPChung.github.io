@@ -1,0 +1,122 @@
+
+
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url("../images/dcdl-orange.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h2 {
+  font-family: 'AvenirNextBold';
+  color: #f6921e;
+}
+
+p {
+  background-color: #A9CFCC;
+color: #00a69c;
+font-family: 'AvenirNextMedium';
+text-align: left;
+}
+
+img {
+  width: 270px;
+  height: 150px;
+}
+
+@font-face {
+    font-family: 'KGSecondChancesSolid';
+    src: url('../fonts/KGSecondChancesSolid.ttf');
+}
+
+@font-face {
+    font-family: 'AvenirNextBold';
+    src: url('../fonts/AvenirNextBold.ttf');
+}
+
+@font-face {
+    font-family: 'AvenirNextMedium';
+    src: url('../fonts/AvenirNextMedium.ttf');
+}
+
+.header{
+    color: #91c73e;
+    font-family: 'AvenirNextBold';
+    
+}
+
+#slider {
+    width: 270px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#slider .slides {
+    display: block;
+    width: 6000px;
+    height: 150px;
+    margin: 0;
+    padding: 0;
+}
+
+#slider .slide {
+    float: left;
+    list-style-type: none;
+    width: 270px;
+    height: 150px;
+}
+
+@media(min-width: 768px){
+
+img {
+  width: 720px;
+  height: 400px;
+}
+
+
+
+#slider {
+    width: 720px;
+  height: 400px;
+    overflow: hidden;
+}
+
+#slider .slides {
+    display: block;
+    width: 6000px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+}
+
+
+#slider .slide {
+    float: left;
+    list-style-type: none;
+    width: 720px;
+    height: 400px;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+}
+
+
