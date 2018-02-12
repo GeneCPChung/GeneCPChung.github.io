@@ -23,7 +23,7 @@ $(document).ready(function(){
   });
 });
 
-/*'use strict';
+'use strict';
 
 
 $(function() {
@@ -65,4 +65,4 @@ $(function() {
         .on('mouseleave', startSlider);
 
     startSlider();
-});*/
+});
