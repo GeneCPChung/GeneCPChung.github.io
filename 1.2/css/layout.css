@@ -28,7 +28,6 @@ header a img {
 	height: 150px;
 }
 
-
 /* Parallax styling*/
 
 .parallax {
@@ -109,22 +108,22 @@ header a img {
   }
 
 /* Styling for parallax groups*/
-#dvImage {
+
+  #group1 {
+    z-index: 5; /* slide over group 2 */
+  }
+  #group1 .parallax__layer--base {
+    background: rgb(102,204,102);
+  }
+
+#group2 {
 	z-index: 3; /* slide under groups 1 and 3 */
 }
-#dvImage .parallax__layer--back {
-	content: "";
-	display: block;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	z-index: -10;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+#group2 .parallax__layer--back {
+  background: rgb(102,204,102);
 }
+
+
 
 #group3 {
 	z-index: 4; /* slide over group 2 and 4 */
@@ -208,6 +207,19 @@ header a img {
 	background: #ddd;
 	color: black;
 }
+
+#lib-slides img { 
+   /* margin: 50px auto;*/ 
+    position: relative; 
+    width: 100vw; 
+    height: 100vh; 
+    /*box-shadow: 0 0 20px rgba(0,0,0,0.4); */
+}
+
+#lib-slides > div { 
+    position: absolute; 
+}
+
 
 /*
 @media(min-width: 768px) {

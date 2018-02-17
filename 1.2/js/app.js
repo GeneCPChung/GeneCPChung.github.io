@@ -28,9 +28,13 @@ $(document).ready(function(){
   });
 });
 
+
+
+
+// Side scrolling slideshow
 'use strict';
 
-/*
+
 $(function() {
 
     //settings for slider
@@ -72,4 +76,3 @@ $(function() {
     startSlider();
 });
 
-*/

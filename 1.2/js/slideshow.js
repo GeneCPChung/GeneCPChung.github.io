@@ -1,28 +1,53 @@
+$("#lib-slides > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#lib-slides > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#lib-slides');
+},  3000);
 
 
+
+
+
+
+
+
+
+
+
+
+
+/*
 var images = ["../images/dcdl-orange.jpg", "../images/dcdl-main.jpg", "../images/dcdl-powel.jpg", "../images/dcdl-ostrander.jpg"];
+	
+
 
         $(function () {
             var i = 0;
+
             $("#dvImage").css("background", "url(images/" + images[i] + ")");
+  
+ 			        
              setInterval(function () {
                 i++;
                 if (i == images.length) {
                     i = 0;
                 }
                 $("#dvImage").fadeOut("slow", function () {
+                    
                     $(this).css("background", "url(images/" + images[i] + ")");
+                     $(this).fadeOut("slow"),
                     $(this).fadeIn("slow");
                 });
             }, 3000);
         });
-
+*/
 /*
-
-$(menu).css("width", "100px");
-
-$("#dvImage").style.width = '50%';
-$("#dvImage").style.height = 'auto';
+$('#dvImage').height($(window).height()); //resize image
 
 	content: "";
 	display: block;
