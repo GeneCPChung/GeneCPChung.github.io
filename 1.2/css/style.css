@@ -183,12 +183,12 @@ img {
 
 .sec h2 {
   font-size: 3rem;
-  padding-top: 5rem;
+  margin-top: -0.25rem;
 }
 
 .sec .cont {
   width: 80vw;
-  padding-right: 2rem;
+  padding-right: 1rem;
 }
 
 .sec .img {
