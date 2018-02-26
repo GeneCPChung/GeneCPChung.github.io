@@ -1,6 +1,6 @@
 /*
 
-body:before {
+/*body:before {
   content: "";
   display: block;
   position: fixed;
@@ -14,7 +14,7 @@ body:before {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
+}*/
 
 h2 {
   font-family: 'AvenirNextBold';
@@ -22,7 +22,7 @@ h2 {
 }
 
 p {
-  background-color: #A9CFCC;
+  background-color: rgba(84,159,154,.5) ;
 color: #00a69c;
 font-family: 'AvenirNextMedium';
 text-align: left;
@@ -83,8 +83,6 @@ img {
   height: 400px;
 }
 
-
-
 #slider {
     width: 720px;
   height: 400px;
@@ -98,7 +96,6 @@ img {
     margin: 0;
     padding: 0;
 }
-
 
 #slider .slide {
     float: left;
