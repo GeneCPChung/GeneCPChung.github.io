@@ -9,37 +9,16 @@ header img {
 	height: 150px;
 }
 
-header a img {
-	width: 270px;
-	height: 150px;
-}
-
-.banner {
-	grid-column: 1 / -1;
-	margin: 1rem auto;
-}
-
-.container {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-}
-
-.grid-container-1 {
-	grid-column: 1/-1;
-	margin: 1rem auto;
-	text-align: center;
-}
 
 .header {
 	align-items: center;
 	display: flex;
-	grid-column: 1 / -1;
 	flex-direction: column;
 }
 
 .navbar {
 	display: flex;
-	flex-direction: row-reverse;
+	flex-direction: row;
 	grid-column: 1/-1;
 	overflow: hidden;
 	position: fixed;
@@ -53,7 +32,7 @@ header a img {
     padding: 14px 16px;
     text-decoration: none;
 }
-/* 
+/*
 .navbar a:hover {
     background: #ddd;
     color: black;
@@ -84,4 +63,15 @@ header a img {
 		margin: 5px;
 	}
 
+}
+
+.logo {
+	fill: #fff;
+	stroke: #fff;
+	width: 150px;
+	height: 100px;
+}
+
+#spacer {
+	width: 90vw;
 }

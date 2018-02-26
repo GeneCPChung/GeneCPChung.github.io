@@ -120,7 +120,8 @@ img {
 } */
 
 .hero {
-  background: url("../images/dcdl-orange.jpg") no-repeat center center;
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("../images/dcdl-orange.jpg") no-repeat center center;
+  background-color: #000;
   height: 100vh;
 }
 
@@ -148,9 +149,57 @@ img {
   line-height: 2rem;
   font-size: 2rem;
   font-family: 'AvenirNextMedium';
-  width: 60vw;
+  width: 45vw;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   color: white;
+  font-weight: 400;
+}
+
+.sec {
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+  font-family: 'AvenirNextMedium';
+  display: flex;
+  font-size: 1.35rem;
+}
+
+.sec--color {
+  background-color: #00a69c;
+  color: white;
+}
+
+.sec--white {
+  background-color: #fff;
+  color: #00a69c;
+}
+
+.sec--white .cont {
+  margin-left: 4rem;
+}
+
+.sec h2 {
+  font-size: 3rem;
+  padding-top: 5rem;
+}
+
+.sec .cont {
+  width: 80vw;
+  padding-right: 2rem;
+}
+
+.sec .img {
+  flex-grow: 30%;
+}
+
+.sec .img img {
+  width: 90%;
+  float: right;
+}
+
+.sec .cont p {
+  padding-top: .75rem;
 }
