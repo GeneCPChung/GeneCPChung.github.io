@@ -120,8 +120,10 @@ img {
 } */
 
 .hero {
-  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("../images/dcdl-orange.jpg") no-repeat center center;
+  background: linear-gradient( rgba(0, 0, 0, 0.23), rgba(0, 0, 0, 0.23) ), url("../images/dark-front.jpg") no-repeat center center;
+  background-size: 100%;
   background-color: #000;
+  background-attachment: fixed;
   height: 100vh;
 }
 
@@ -130,7 +132,6 @@ img {
   padding-right: 2vh;
   font-size: 1.45rem;
   font-family: 'AvenirNextMedium';
-  background-color: rgba(0,0,0,.5);
 }
 
 .navbar a {
@@ -149,7 +150,7 @@ img {
   line-height: 2rem;
   font-size: 2rem;
   font-family: 'AvenirNextMedium';
-  width: 45vw;
+  width: 35vw;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -157,14 +158,17 @@ img {
   font-weight: 400;
 }
 
-.sec {
+.sec, .events {
   padding-left: 10vw;
   padding-right: 10vw;
   padding-top: 5vw;
   padding-bottom: 5vw;
   font-family: 'AvenirNextMedium';
-  display: flex;
   font-size: 1.35rem;
+}
+
+.sec {
+  display: flex;
 }
 
 .sec--color {
@@ -181,9 +185,13 @@ img {
   margin-left: 4rem;
 }
 
-.sec h2 {
+.sec h2, .events h2 {
   font-size: 3rem;
   padding-top: 5rem;
+}
+
+.events h2 {
+  text-align: center;
 }
 
 .sec .cont {
@@ -202,4 +210,19 @@ img {
 
 .sec .cont p {
   padding-top: .75rem;
+}
+
+.events td {
+    padding-right: 2.5rem;
+}
+
+.events table {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 8rem;
+}
+
+
+.events table {
+  padding-top: 2rem;
 }
