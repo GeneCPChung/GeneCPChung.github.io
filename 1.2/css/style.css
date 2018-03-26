@@ -141,7 +141,8 @@ img {
 }
 
 .navbar a:hover {
-  background-color: #00a69c;
+  /* background-color: #00a69c;*/
+  border-bottom: 3px solid white;
   transition-duration: 0.2s;
 }
 
@@ -187,7 +188,7 @@ img {
 
 .sec h2, .events h2 {
   font-size: 3rem;
-  padding-top: 5rem;
+  padding-top: 0rem;
 }
 
 .events h2 {
