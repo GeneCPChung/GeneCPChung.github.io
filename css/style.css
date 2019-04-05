@@ -1,5 +1,20 @@
 body {
-	background-color: #CDF9F8;	
+
+}
+
+@font-face {
+	font-family: 'Copperplate Gothic Bold';
+	src: url('../fonts/CopperplateGothicBold.ttf');
+}
+
+@font-face {
+	font-family: 'Copperplate Gothic Bold Regular';
+	src: url('../fonts/CopperplateGothicBoldRegular.ttf');
+}
+
+@font-face {
+	font-family: 'Copperplate Gothic Light';
+	src: url('../fonts/CopperplateGothicLight.ttf');
 }
 
 header {
@@ -7,13 +22,13 @@ header {
 }
 
 h1 {
-	color: #00A0B6;
-	font-family: "Arial Black";
+	color: #2E2B29;
+	font-family: "Copperplate Gothic Bold", "Arial Black";
 }
 
 h2 {
 	color: #00A0B6;
-	font-family: "Arial Black";
+	font-family: "Copperplate Gothic Bold Regular";
 	font-size: 85%;
 }
 
@@ -32,11 +47,13 @@ ul {
 }
 
 p {
-	color: #007A7A;
+	color: #284600;
+	font-family: "Copperplate Gothic Light", "Arial Black";
 }
 
 a {
 	text-decoration: none;
+    font-family: "Copperplate Gothic Light", "Arial Black";
 }
 
 a:link {
@@ -62,9 +79,56 @@ ul li p {
 	display: block;
 }
 
+/*---------- FADER -------------*/
+#fader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 999999;
+	pointer-events: none;
+	background: white;
+	animation-duration: 400ms;
+	animation-timing-function: ease-in-out;
+}
+#fader:before{
+	content: 'fade';
+}
+
+@keyframes fade-out {
+	from { opacity: 1}
+	to { opacity: 0}
+}
+
+@keyframes fade-in {
+	from { opacity: 0}
+	to { opacity: 1 }
+}
+
+#fader.fade-out {
+	opacity: 0;
+	animation-name: fade-out;
+}
+
+#fader.fade-in {
+	opacity: 1;
+	animation-name: fade-in;
+}
+
+/*---------- BACKGROUND -------------*/
+.background{
+	background-image: linear-gradient(to bottom, rgba(216, 216, 212, 0), #CCF09E);
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+
+/* SOCIAL MEDIA */
 #social-media-flex {
 	display: flex;
-	background-color: #54D8D6;
+	background-color: #B1E66D;
 	justify-content: space-around;
 	padding: 1%;
 }
+
