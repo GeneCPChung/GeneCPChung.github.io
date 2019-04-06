@@ -17,8 +17,23 @@ body {
 	src: url('../fonts/CopperplateGothicLight.ttf');
 }
 
-header {
-	color: white;
+a {
+	text-decoration: none;
+	font-family: "Copperplate Gothic Light", "Arial Black";
+}
+
+a:link {
+	color: #00A0B6;
+}
+
+a:visited {
+	color: #00A0B6;
+}
+
+a:hover {
+
+	color: #00FFFF;
+
 }
 
 h1 {
@@ -49,29 +64,6 @@ ul {
 p {
 	color: #284600;
 	font-family: "Copperplate Gothic Light", "Arial Black";
-}
-
-a {
-	text-decoration: none;
-    font-family: "Copperplate Gothic Light", "Arial Black";
-}
-
-a:link {
-	color: #00A0B6;
-}
-
-a:visited {
-	color: #00A0B6;
-}
-
-a:hover {
-	
-	color: #00FFFF;
-
-}
-
-nav {
-	background-color: #54D8D6;
 }
 
 ul li p {
@@ -114,6 +106,49 @@ ul li p {
 #fader.fade-in {
 	opacity: 1;
 	animation-name: fade-in;
+}
+
+/*---------- NAVBARSLIDEIN -------------*/
+@keyframes slideInFromLeft {
+	0% {
+		transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideInFromRight {
+	0% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideInFromTop {
+	0% {
+		transform: translateY(-100%);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+#slider1 {
+	/* This section calls the slideInFromLeft animation we defined above */
+	animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+#slider2 {
+	/* This section calls the slideInFromLeft animation we defined above */
+	animation: 1s ease-out 0s 1 slideInFromRight;
+}
+
+#slider3 {
+	/* This section calls the slideInFromLeft animation we defined above */
+	animation: 1s ease-out 0s 1 slideInFromTop;
 }
 
 /*---------- BACKGROUND -------------*/

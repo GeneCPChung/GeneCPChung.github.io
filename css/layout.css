@@ -5,15 +5,12 @@
 	padding: 0;
 }
 
-
-
 header {
 	padding-top: 3%;
-	padding-bottom: 1.5em;
+	padding-bottom: .5em;
 }
 
 h1 {
-
 	text-align: center;
 }
 
@@ -25,16 +22,6 @@ img {
 	max-width: 100%;
 }
 
-nav {
-	height: 4%;
-	display: grid;
-	position: fixed;
-	top: 0;
-	width: 100%;
-}
-nav ul li a {
-	font-size: 75%;
-}
 ul li p {
 	padding: 2%;
 }
@@ -67,7 +54,6 @@ p {
 	height: 3.5rem;
 	position: absolute;
 	width: 100%;
-
 }
 
 .grid-item-1 {
@@ -86,11 +72,16 @@ p {
 	justify-content: center;
 }
 
-.grid-item-3 {
+.grid-item-3{
+	padding-top: 2em;
 	display: flex;
-	display: grid;
 	grid-column: 1 / -1;
 	justify-content: center;
+
+}
+
+.grid-item-3 img{
+	max-width: 20rem;
 }
 
 .grid-item-4 {
@@ -120,10 +111,9 @@ p {
 	padding-top: .5rem;
 }
 
-#homeButton{
-	padding-right: 2rem;
-	border-style: double hidden double double;
-	font-size: 150%;
+.navbar{
+	padding-top: .25em;
+	text-align: center;
 }
 
 .project-item-1 {
@@ -142,20 +132,18 @@ p {
 	margin-bottom: 1.5rem;
 }
 
+#homeButton{
+	padding-right: 2rem;
+	border-style: double hidden double double;
+	font-size: 150%;
+}
+
 #mdn {
 	font-size: 100%;
 }
 
-@media(min-width: 768px){
 
-
-	header {
-		padding-top: 0;
-	}
-
-	nav {
-		height: 4%;
-	}
+@media(min-width: 765px){
 
 	nav ul li a {
 		font-size: 115%;
@@ -170,4 +158,23 @@ p {
 		text-align: center;
 		margin: 0%;
 	}
+
+	.navbar{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.navbar a {
+
+		display: flex;
+		justify-content: space-between;
+		margin: .25em;
+	}
+
+	#homeButton{
+		padding: .25em;
+		padding-right: 2em;
+	}
+
 }
