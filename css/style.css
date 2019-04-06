@@ -89,7 +89,7 @@ ul li p {
 	z-index: 999999;
 	pointer-events: none;
 	background: white;
-	animation-duration: 400ms;
+	animation-duration: 300ms;
 	animation-timing-function: ease-in-out;
 }
 #fader:before{

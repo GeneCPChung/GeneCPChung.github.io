@@ -5,9 +5,7 @@
 	padding: 0;
 }
 
-body {
-	padding-top: 2.5rem;
-}
+
 
 header {
 	padding-top: 3%;
@@ -109,6 +107,12 @@ p {
 	flex-direction: column;
 }
 
+.header-item-2 {
+	align-items: flex-end;
+	display: flex;
+	flex-direction: column;
+}
+
 .header-img {
 	border-radius: 50%;
 	max-height: 8rem;
@@ -116,10 +120,9 @@ p {
 	padding-top: .5rem;
 }
 
-.homeButton{
-	padding-left: 2em;
-	padding-right: .25em;
-	border-style: solid;
+#homeButton{
+	padding-right: 2rem;
+	border-style: double hidden double double;
 	font-size: 150%;
 }
 
@@ -166,17 +169,5 @@ p {
 		list-style-type: none;
 		text-align: center;
 		margin: 0%;
-	}
-
-
-	.project-item-1 {
-		align-items: center;
-		display: flex;
-		display: grid;
-		grid-gap: 1rem;
-		grid-template-columns: 1fr 1fr;
-		justify-content: center;
-		margin: 3%;
-		max-width: 1000px;
 	}
 }
