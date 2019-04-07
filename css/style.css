@@ -118,7 +118,7 @@ ul li p {
 	animation-name: fade-in;
 }
 
-/*---------- NAVBARSLIDEIN -------------*/
+/*---------- SLIDER -------------*/
 @keyframes slideInFromLeft {
 	0% {
 		transform: translateX(-100%);
@@ -164,6 +164,11 @@ ul li p {
 #slider4 {
 	/* This section calls the slideInFromLeft animation we defined above */
 	animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+#slider5 {
+	/* This section calls the slideInFromLeft animation we defined above */
+	animation: 1s ease-out 0s 1 slideInFromRight;
 }
 
 /*---------- BACKGROUND -------------*/

@@ -7,22 +7,34 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>Projects</title>
+    <title>My Projects</title>
 
 </head>
 <body class="background">
 <svg id="fader"></svg>
 <script>fadeInPage()</script>
-<div class="container">
-    <header id="slider1">
-        <div class="navbar">
-            <a href="../index.html">Home</a>
-            <a href="../about/aboutme.html">About</a>
-            <a href="../connect/contactinfo.html">Contact</a>
-        </div>
+<div class="container" id="container-1">
+    <div class="content-wrap" id="container2">
+
+    <header class="split-nav">
+
+        <section id="slider1">
+            <div class="navbar-left">
+                <a href="../index.html">Home</a>
+                <a href="../about/aboutme.html">About</a>
+            </div>
+        </section>
+        <section  id="slider2">
+            <div class="navbar-right">
+                <a href="../connect/contactinfo.html">Contact</a>
+                <a href="../resume/myresume.html">Resume</a>
+            </div>
+        </section>
+
     </header>
-    <section id="slider2">
-        <h1>Projects</h1>
+
+        <h1 id="slider3">Projects</h1>
+    <section id="slider4">
         <div class="grid-item-3">
             <a href="https://github.com/GeneCPChung/reviews-site-full-stack" target="_blank">
                 <img class="gitHub" src="../images/reviews-site.jpg"></a>
@@ -34,6 +46,7 @@
     <p>&copy;</p>
     <p>Gene CP Chung 2019</p>
 </footer>
+</div>
 </body>
 <script src="/js/.js"></script>
 </html>
