@@ -1,3 +1,13 @@
+/*---------- COLOURPALLATE -------------*/
+:root{
+	--dull-yellow-green: #84BA3C;
+	--darker-yellow-green: #172209;
+	--dark-yellow-green: #5C8E1B;
+	--light-yellow-green: #B1E66D;
+	--pale-yellow-green: #D0F5A1;
+}
+
+
 body {
 
 }
@@ -37,7 +47,7 @@ a:hover {
 }
 
 h1 {
-	color: #2E2B29;
+	color: var(--darker-yellow-green);
 	font-family: "Copperplate Gothic Bold", "Arial Black";
 }
 
@@ -149,6 +159,11 @@ ul li p {
 #slider3 {
 	/* This section calls the slideInFromLeft animation we defined above */
 	animation: 1s ease-out 0s 1 slideInFromTop;
+}
+
+#slider4 {
+	/* This section calls the slideInFromLeft animation we defined above */
+	animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 
 /*---------- BACKGROUND -------------*/
