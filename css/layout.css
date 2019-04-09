@@ -82,7 +82,7 @@ p {
 	/*	display: flex;
 		justify-content: center;*/
 	position: relative;
-	width: 50%;
+	width: 75%;
 }
 
 .image{
@@ -120,9 +120,6 @@ p {
 	font-size: .75em;
 }
 
-
-
-
 .grid-item-4 {
 	align-items: center;
 	display: flex;
@@ -158,9 +155,27 @@ p {
 	max-width: 1000px;
 }
 
+/*---------- HOVEREFFECT -------------*/
 .split-nav{
 	display: flex;
 	justify-content: space-between;
+}
+
+.navbar-left{
+	 padding-left: 1em;
+ }
+
+.navbar-left a{
+	padding-left: .5em;
+}
+
+.navbar-right{
+	padding-right: 1em; /* Account for hidden scroll-bar padding */
+}
+
+.navbar-right a{
+	padding-right: .5em;
+
 }
 
 .social-media {
@@ -179,6 +194,10 @@ p {
 		padding-left: 10em;
 	}
 
+	.navbar-left a{
+		padding-right: 1em;
+	}
+
 	div .navbar-left{
 		background: #172209;
 		padding-bottom: 1em;
@@ -188,6 +207,10 @@ p {
 
 	.navbar-right{
 		padding-right: 10em; /* Account for hidden scroll-bar padding */
+	}
+
+	.navbar-right a{
+		padding-left: 1em;
 	}
 
 	div .navbar-right{
