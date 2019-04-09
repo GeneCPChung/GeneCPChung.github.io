@@ -19,10 +19,6 @@ h3 {
 	text-align: center;
 }
 
-img {
-	max-width: 100%;
-}
-
 ul li p {
 	padding: 2%;
 }
@@ -79,12 +75,53 @@ p {
 	display: flex;
 	grid-column: 1 / -1;
 	justify-content: center;
-
 }
 
-.grid-item-3 img{
-	max-width: 20rem;
+/*---------- HOVEREFFECT -------------*/
+.container2 {
+	/*	display: flex;
+		justify-content: center;*/
+	position: relative;
+	width: 50%;
 }
+
+.image{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #008CBA;
+}
+
+.container2:hover .overlay {
+	opacity: 1;
+}
+
+.text {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+
+
 
 .grid-item-4 {
 	align-items: center;
@@ -133,22 +170,10 @@ p {
 	margin-bottom: 1.5rem;
 }
 
+
 @media(min-width: 765px){
 
-	a {
-		font-size: 150%;
-		margin: .25em;
-	}
-
-	ol,
-	ul {
-		align-items: center;
-		display: flex;
-		justify-content: space-around;
-		list-style-type: none;
-		text-align: center;
-		margin: 0%;
-	}
+	/*---------- NAVBAR -------------*/
 
 	.navbar-left{
 		padding-left: 10em;
@@ -172,12 +197,54 @@ p {
 		padding-left: .25em;
 	}
 
+	/*---------- HOVEREFFECT -------------*/
+	.container2 {
+	/*	display: flex;
+		justify-content: center;*/
+		position: relative;
+		width: 50%;
+	}
+
+	.image{
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+	.overlay {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 100%;
+		width: 100%;
+		opacity: 0;
+		transition: .5s ease;
+		background-color: #008CBA;
+	}
+
+	.container2:hover .overlay {
+		opacity: 1;
+	}
+
+	.text {
+		color: white;
+		font-size: 20px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		text-align: center;
+	}
+
 	#container-1{
 		height: 100%;
 		width: 100%;
 		overflow: hidden;
 	}
-
 
 	#container2{
 		width: 100%;

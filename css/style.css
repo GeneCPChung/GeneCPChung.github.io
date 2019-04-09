@@ -7,11 +7,6 @@
 	--pale-yellow-green: #D0F5A1;
 }
 
-
-body {
-
-}
-
 @font-face {
 	font-family: 'Copperplate Gothic Bold';
 	src: url('../fonts/CopperplateGothicBold.ttf');
@@ -81,11 +76,6 @@ ul {
 p {
 	color: #284600;
 	font-family: "Copperplate Gothic Light", "Arial Black";
-}
-
-ul li p {
-	background-color: #54D8D6;
-	display: block;
 }
 
 /*---------- FADER -------------*/
@@ -186,7 +176,7 @@ ul li p {
 	height: 100%;
 }
 
-/* SOCIAL MEDIA */
+/*---------- SOCIAL MEDIA -------------*/
 #social-media-flex {
 	display: flex;
 	background-color: #B1E66D;
