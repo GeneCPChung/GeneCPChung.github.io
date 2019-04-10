@@ -55,7 +55,7 @@ h1 {
 h2 {
 	text-align: center;
 	color: #84BA3C;
-	font-family: "Copperplate Gothic Bold Regular";
+	font-family: "Copperplate Gothic Light";
 	font-size: 85%;
 }
 
@@ -168,6 +168,11 @@ p {
 	animation: 1s ease-out 0s 1 slideInFromRight;
 }
 
+#slider6 {
+	/* This section calls the slideInFromLeft animation we defined above */
+	animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
 /*---------- BACKGROUND -------------*/
 .background{
 	background-image: linear-gradient(to bottom, rgba(216, 216, 212, 0), #CCF09E);
@@ -179,7 +184,7 @@ p {
 /*---------- SOCIAL MEDIA -------------*/
 #social-media-flex {
 	display: flex;
-	background-color: #B1E66D;
+	background-color: #172209;
 	justify-content: space-around;
 	padding: 1%;
 }
