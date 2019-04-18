@@ -1,0 +1,191 @@
+/*---------- COLOURPALLATE -------------*/
+:root{
+	--dull-yellow-green: #84BA3C;
+	--darker-yellow-green: #172209;
+	--dark-yellow-green: #5C8E1B;
+	--light-yellow-green: #B1E66D;
+	--pale-yellow-green: #D0F5A1;
+}
+
+@font-face {
+	font-family: 'Copperplate Gothic Bold';
+	src: url('../fonts/CopperplateGothicBold.ttf');
+}
+
+@font-face {
+	font-family: 'Copperplate Gothic Bold Regular';
+	src: url('../fonts/CopperplateGothicBoldRegular.ttf');
+}
+
+@font-face {
+	font-family: 'Copperplate Gothic Light';
+	src: url('../fonts/CopperplateGothicLight.ttf');
+}
+
+a {
+	text-decoration: none;
+	font-family: "Copperplate Gothic Light", "Arial Black";
+}
+
+a:link {
+	color: #B1E66D;
+}
+
+a:visited {
+	color: #84BA3C;
+}
+
+a:hover {
+	color: #D0F5A1;
+}
+
+div p a:hover{
+	text-shadow:
+			-1px -1px 0 #000,
+			1px -1px 0 #000,
+			-1px 1px 0 #000,
+			1px 1px 0 #000;
+}
+
+h1 {
+	color: var(--darker-yellow-green);
+	font-family: "Copperplate Gothic Bold", "Arial Black";
+}
+
+h2 {
+	text-align: center;
+	color: #84BA3C;
+	font-family: "Copperplate Gothic Light";
+	font-size: 85%;
+}
+
+h3	{
+	color: #002F2F;
+}
+
+li a {
+
+	font-family: "Arial Black";
+}
+
+ol,
+ul {
+	list-style-type: none;
+}
+
+p {
+	color: #284600;
+	font-family: "Copperplate Gothic Light", "Arial Black";
+}
+
+/*---------- FADER -------------*/
+#fader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 999999;
+	pointer-events: none;
+	background: white;
+	animation-duration: 500ms;
+	animation-timing-function: ease-in;
+}
+#fader:before{
+	content: 'fade';
+}
+
+@keyframes fade-out {
+	from { opacity: 1}
+	to { opacity: 0}
+}
+
+@keyframes fade-in {
+	from { opacity: 0}
+	to { opacity: 1 }
+}
+
+#fader.fade-out {
+	opacity: 0;
+	animation-name: fade-out;
+}
+
+#fader.fade-in {
+	opacity: 1;
+	animation-name: fade-in;
+}
+
+/*---------- SLIDER -------------*/
+@keyframes slideInFromLeft {
+	0% {
+		transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideInFromRight {
+	0% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideInFromTop {
+	0% {
+		transform: translateY(-100%);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+#slider1 {
+	/* This section calls the slideInFromLeft animation we defined above */
+	animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+#slider2 {
+	/* This section calls the slideInFromLeft animation we defined above */
+	animation: 1s ease-out 0s 1 slideInFromRight;
+}
+
+#slider3 {
+	/* This section calls the slideInFromLeft animation we defined above */
+	animation: 1s ease-out 0s 1 slideInFromTop;
+}
+
+#slider4 {
+	/* This section calls the slideInFromLeft animation we defined above */
+	animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+#slider5 {
+	/* This section calls the slideInFromLeft animation we defined above */
+	animation: 1s ease-out 0s 1 slideInFromRight;
+}
+
+#slider6 {
+	/* This section calls the slideInFromLeft animation we defined above */
+	animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+/*---------- BACKGROUND -------------*/
+.background{
+	background-image: linear-gradient(to bottom, rgba(216, 216, 212, 0), #CCF09E);
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+
+/*---------- SOCIAL MEDIA -------------*/
+#social-media-flex {
+	display: flex;
+	background-color: #172209;
+	justify-content: space-around;
+	padding: 1%;
+}
+
