@@ -1,41 +1,46 @@
 
-
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
 
-header {
-	padding-top: 2em;
-	padding-bottom: .5em;
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Open Sans Regular";
 }
 
-h1 {
-	text-align: center;
+html {
+	scroll-behavior: smooth;
 }
 
-h3 {
-	text-align: center;
+a {
+	margin: 15px;
+	color: black;
+	text-decoration: none;
+	text-transform: uppercase;
 }
 
-ul li p {
-	padding: 2%;
+a:hover{
+	color: black;
 }
 
-ol, 
-ul {
-	align-items: center;
-	display: flex;
-	justify-content: space-around;
+h1{
+	font-size:	45px;
+	font-family: Montserrat-Regular;
 }
 
 p {
-
-	text-align: center;
+	font-family:"Open Sans Regular";
+	font-size: 24px;
+	max-width: 90ch;
+	line-height: 150%;
 }
 
+
 /*---------- FOOTER -------------*/
+
 .container {
 	margin: 0 auto;
 	position: relative;
@@ -47,237 +52,120 @@ p {
 }
 
 .footer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 	align: center;
 	bottom: 0;
 	font-size: .75em;
 	height: 3.5rem;
+	padding-top: .5em;
 	position: absolute;
 	width: 100%;
 }
 
-/*---------- GRIDITEMS -------------*/
 
-.grid-item-1 {
+/*---------- NAVBAR -------------*/
+.logo{
+	margin-left: 2%;
+	font-family: OpenSans-Bold;
+	letter-spacing: 1px;
+	font-weight: bold;
+	font-size: 45px;
+	color: black;
+}
+
+.navbar-left {
 	align-items: center;
 	display: flex;
-	display: grid;
-	grid-column: 1 / -1;
-	justify-content: center;
-	padding: 1em;
+	flex: 1 1 auto;
+	flex-direction: row;
+	margin-left: 10%;
+	text-transform: uppercase;
 }
 
-.grid-item-2 {
-	display: flex;
-	display: grid;
-	grid-column: 1 / -1;
-	justify-content: center;
-}
-
-.grid-item-3{
-	padding-top: 2em;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-/*---------- HOVEREFFECT -------------*/
-.container2 {
-	/*	display: flex;
-		justify-content: center;*/
-	position: relative;
-	width: 75%;
-}
-
-.image{
-	display: block;
-	width: 100%;
-	height: auto;
-}
-
-.overlay {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	height: 100%;
-	width: 100%;
-	opacity: 0;
-	transition: .5s ease;
-	background-color: #D0F5A1;
-}
-
-.container2:hover .overlay {
-	opacity: 1;
-}
-
-.text {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	text-align: center;
-	font-size: .75em;
-}
-
-.grid-item-4 {
-	align-items: center;
-	display: flex;
-	display: grid;
-	grid-column: 1 / -1;
-	justify-content: center;
-}
-
-.header-item-1 {
-	align-items: center;
-	display: flex;
-	flex-direction: column;
-}
-
-.header-img {
-	border-radius: 50%;
-	max-height: 8rem;
-	max-width: 6rem;
-	padding-top: .5rem;
+.logoTop{
+	height: 3em;
+	width: 4em;
 }
 
 .navbar{
-	padding-top: .25em;
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color: lightgreen;
+	width: 100%;
+	height: 70px;
+	z-index: 1;
+	padding-bottom: 5em;
+}
+
+
+.nav{
+	display: flex;
+	justify-content: right;
+	list-style: none;
+	margin-right: 10%;
+}
+
+.nav li a {
+	font-size: 125%;
+	font-weight: bold;
+}
+
+/*---------- AREAS -------------*/
+
+.banner-area {
+	position: relative;
+	background: linear-gradient( rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.15) ), url("../images/landing-page.jpg");
+	width: 100%;
+	height: 100vh;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.banner-text {
+	align-items: center;
+	color: white;
+	display: flex;
+	font-family: "Montserrat-Regular";
+	font-size: 75px;
+	font-weight: lighter;
+	justify-content: center;
+	padding-top: 40vh;
 	text-align: center;
 }
 
-.project-item-1 {
-	align-items: flex-start;
+.banner-text2 {
+	align-items: center;
+	color: white;
 	display: flex;
-	display: grid;
-	grid-gap: 1rem;
-	margin: 3%;
-	max-width: 1000px;
+	font-family: "Montserrat-Regular";
+	font-size: 25px;
+	font-weight: lighter;
+	justify-content: center;
+	padding-top: 2vh;
+	text-align: center;
 }
 
-/*---------- HOVEREFFECT -------------*/
-.split-nav{
-	display: flex;
-	justify-content: space-between;
-}
-
-.navbar-left{
-	 padding-left: 1em;
- }
-
-.navbar-left a{
-	padding-left: .5em;
-}
-
-.navbar-right{
-	padding-right: 1em; /* Account for hidden scroll-bar padding */
-}
-
-.navbar-right a{
-	padding-right: .5em;
-
-}
-
-.social-media {
-	margin-top: 3%;
+.about-area, .port-area, .services-area, .contact-area{
+	position: relative;
 	display: flex;
 	justify-content: space-around;
-	margin-bottom: 1.5rem;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+	width: 100%;
+	height: 60em;
 }
 
-
-@media(min-width: 765px){
-
-	/*---------- NAVBAR -------------*/
-
-	.navbar-left{
-		padding-left: 10em;
-	}
-
-	.navbar-left a{
-		padding-right: 1em;
-	}
-
-	div .navbar-left{
-		opacity: .5;
-		border-style: solid;
-		border-color: purple;
-		padding-bottom: 1em;
-		padding-top: 1em;
-		padding-right: .25em;
-	}
-
-	.navbar-right{
-		padding-right: 10em; /* Account for hidden scroll-bar padding */
-	}
-
-	.navbar-right a{
-		padding-left: 1em;
-	}
-
-	div .navbar-right{
-		background: #172209;
-		padding-bottom: 1em;
-		padding-top: 1em;
-		padding-left: .25em;
-	}
-
-	/*---------- HOVEREFFECT -------------*/
-	.container2 {
-	/*	display: flex;
-		justify-content: center;*/
-		position: relative;
-		width: 50%;
-	}
-
-	.image{
-		display: block;
-		width: 100%;
-		height: auto;
-	}
-
-	.overlay {
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		height: 100%;
-		width: 100%;
-		opacity: 0;
-		transition: .5s ease;
-		background-color: #B1E66D;
-	}
-
-	.container2:hover .overlay {
-		opacity: 1;
-	}
-
-	.text {
-		color: white;
-		font-size: 20px;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		-webkit-transform: translate(-50%, -50%);
-		-ms-transform: translate(-50%, -50%);
-		transform: translate(-50%, -50%);
-		text-align: center;
-	}
-
-	#container-1{
-		height: 100%;
-		width: 100%;
-		overflow: hidden;
-	}
-
-	#container2{
-		width: 100%;
-		height: 99%;
-		overflow: hidden;
-		padding-right: 0px;
-	}
-
+.text-part {
+	padding-top: 2em;
+	width: 65%;
+	height: 85%;
 }
