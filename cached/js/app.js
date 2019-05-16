@@ -7,10 +7,12 @@ function fadeInPage() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-        if(!window.AnimationEvent){return;}
-        var anchors = document.getElementsByTagName('a');
+    if (!window.AnimationEvent) {
+        return;
+    }
+    var anchors = document.getElementsByTagName('a');
     for (var idx = 0; idx < anchors.length; idx += 1) {
-        if (anchors[idx].hostname !== window.location.hostname){
+        if (anchors[idx].hostname !== window.location.hostname) {
             continue;
         }
         anchors[idx].addEventListener('click', function (event) {
@@ -31,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 window.addEventListener('pageshow', function (event) {
-    if (!event.persisted){
+    if (!event.persisted) {
         return;
     }
     var fader = document.getElementById('fader');
