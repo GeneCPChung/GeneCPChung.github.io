@@ -8,14 +8,13 @@ html {
 }
 
 a {
-    margin: .5em;
     color: black;
     text-decoration: none;
     text-transform: uppercase;
 }
 
 a:hover {
-    color: black;
+    color: white;
 }
 
 h1 {
@@ -30,6 +29,20 @@ p {
     line-height: 150%;
 }
 
+.text-part p a{
+    color: lawngreen;
+}
+
+ol,
+ul {
+    list-style-type: none;
+}
+
+.contact-me {
+    width: 85vw;
+    height: 100%;
+}
+
 
 /*---------- FOOTER -------------*/
 
@@ -42,7 +55,7 @@ p {
 }
 
 .content-wrap {
-    padding-bottom: 10rem;
+    padding-bottom: 30em;
 }
 
 .footer {
@@ -53,7 +66,7 @@ p {
     align: center;
     bottom: 0;
     font-size: .75em;
-    height: 3.5rem;
+    height: 3.5em;
     padding-top: .5em;
     position: absolute;
     width: 100vw;
@@ -73,7 +86,7 @@ p {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 6em;
+    height: 5em;
     justify-content: center;
     position: fixed;
     width: 100vw;
@@ -108,6 +121,8 @@ p {
 
 .nav li a {
     font-weight: bold;
+    margin-left: 1em;
+    margin-right: 1em;
 
 }
 
@@ -148,7 +163,7 @@ p {
 }
 
 
-.about-area, .port-area, .services-area, .contact-area {
+.about-area, .port-area, .blog-area, .contact-area {
     position: relative;
     display: flex;
     justify-content: space-around;
@@ -156,11 +171,38 @@ p {
     flex-wrap: wrap;
     flex-direction: row;
     width: 100vw;
-    height: 30em;
+    height: 45em;
 }
 
 .text-part {
-    padding-top: 6em;
+    text-align: center;
+    padding-top: 5em;
     height: 100%;
     width: 85%;
+}
+
+.text-part a{
+    text-decoration: limegreen;
+
+}
+
+/*---------- SOCIAL MEDIA -------------*/
+.social-media {
+    display: flex;
+    justify-content: space-around;
+}
+
+.soc-med {
+    margin-top: 4%;
+    margin-bottom: 4%;
+    font-family: "Open Sans Regular";
+}
+
+#social-media-flex{
+    align-items: center;
+    height: 3em;
+    display: flex;
+    background-color: lightgreen;
+    justify-content: space-around;
+    padding: 1%;
 }
