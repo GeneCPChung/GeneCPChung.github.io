@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    -webkit-overflow-scrolling: touch;
 }
 
 html, body {
@@ -81,6 +82,7 @@ ul {
 .logo {
     height: 1.5em;
     width: 2em;
+    margin-top: .25em;
 
 }
 
@@ -90,7 +92,7 @@ ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 5em;
+    height: 4em;
     justify-content: center;
     position: fixed;
     width: 100vw;
@@ -110,6 +112,10 @@ ul {
     margin-bottom: -1.25em;
     margin-top: -.5em;
     text-transform: uppercase;
+}
+
+.nav-top {
+    margin-top: .5em;
 }
 
 .nav-left h1 {
